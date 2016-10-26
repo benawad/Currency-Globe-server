@@ -18,7 +18,7 @@ def get_db():
     current application context.
     """
     if not hasattr(g, 'mongo_db'):
-        g.mongo_db = MongoClient(os.environ["MONGO_URI"])
+        g.mongo_db = MongoClient(os.environ["MONGODB_URI"])
     return g.mongo_db
 
 
