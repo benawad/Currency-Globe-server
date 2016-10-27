@@ -3,3 +3,7 @@ gunicorn
 gevent
 pymongo
 flask_cors
+requests
+pandas
+beautifulsoup4
+
