@@ -6,4 +6,4 @@ flask_cors
 requests
 pandas
 beautifulsoup4
-
+lxml
