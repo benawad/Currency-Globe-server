@@ -2,13 +2,11 @@ from flask import Flask, g
 from pymongo import MongoClient
 import os
 import json
-from crossd import crossdomain
 
 app = Flask(__name__)
 
 
 @app.route("/data")
-@crossdomain(origin='*')
 def data():
     client = get_db()
     db = client.get_default_database()
